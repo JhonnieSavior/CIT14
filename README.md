@@ -1,2 +1,2 @@
-# CIT14
+# CIT14 - Project - PHOTO BLOG
 Web Technologies
