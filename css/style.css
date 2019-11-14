@@ -162,7 +162,7 @@ figure {
   margin: 0 auto;
   max-width: 620px;
   width: 100%;
-  padding-top: 70px;
+  padding-top: 30px;
   padding-bottom: 70px;
 }
 .page-content img {
@@ -249,4 +249,23 @@ figure {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+.col-md-3 {
+  width: 20%;
+  float: left;
+  position: relative;
+  min-height: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.page-content-icon {
+  max-width: 100%;
+  width: 100%;
+  padding-top: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+}
+h4{
+  margin: 0 0 0 0;
+}
