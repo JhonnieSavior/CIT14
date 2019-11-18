@@ -31,29 +31,7 @@
 
 	</head>
 	<body>
-
-
-</head>
-<body>
-
-<div class="sidenav">
-  
-  <a href="#about">
-  		<img src="Icons/aboutus.png" alt="About" style="float:center;width:85px;height:85px;">
-  		
-  </a>
-  <br>
-  <a href="#mission">
-  		<img src="Icons/mission.png" alt="About" style="float:center;width:85px;height:85px;">
-  </a>
-  <br>
-    <a href="#vision">
-  		<img src="Icons/vision.png" alt="About" style="float:center;width:85px;height:85px;">
-  </a>
-
-</div>
-		 
-	
+	<div id = "backTop">
 		<header id="header" role="banner">
 			<div class="container text-center">
 				<div id="logo">
@@ -69,56 +47,81 @@
 				</nav>
 			</div>
 		</header>
+	</div>
+		<div id="navigation">
+			<ul>
+				<li><a href="#backTop">Back to Top</a></li>
+				<li><a href="#section1">About Us</a></li>
+				<li><a href="#section2">Vision & Mission</a></li>
+				<li><a href="#section3">Achievements</a></li>
+			</ul>
+		</div>
+			<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navigation");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky-nav")
+			  } else {
+				navbar.classList.remove("sticky-nav");
+			  }
+			}	
+			</script>
 		<!-- END #header -->
-		<center><h1 class="mb0" id="about">About Us</h1></center>
-		<div class="page-content-icon">
-			<div class="row">
-			    <div class="col-md-3"> <i class="fa fa-desktop"></i>
-			    	<p class="text-center"><img src="Icons/FARRO.png" alt="Frederick pic"></p>
-				    <h4 class="mb0" >Fredrick Farro</h4>
-				    <div class="meta"><span>Project Manager</span></div>
+		<div id = "section1">
+			<center><h1 class="mb0" id="about">About Us</h1></center>
+			<div class="page-content-icon">
+				<div class="row">
+				    <div class="col-md-3"> <i class="fa fa-desktop"></i>
+				    	<p class="text-center"><img src="Icons/FARRO.png" alt="Frederick pic"></p>
+					    <h4 class="mb0" >Fredrick Farro</h4>
+					    <div class="meta"><span>Project Manager</span></div>
+				    </div>
+				    <div class="col-md-3"> <i class="fa fa-gears"></i>
+				    	<p class="text-center"><img src="Icons/GACILAN.png" alt="Frederick pic"></p>
+				        <h4 class="mb0" >Gacilan, John James</h4>
+					    <div class="meta"><span>Web Developer, Writer</span></div>
+				    </div>
+				    <div class="col-md-3"> <i class="fa fa-rocket"></i>
+				    	<p class="text-center"><img src="Icons/PALAGANAS.png" alt="Frederick pic"></p>
+				        <h4 class="mb0" >Palaganas, Jhonnie</h4>
+					    <div class="meta"><span>Web Designer, Web Developer, Programmer</span></div>
+				    </div>
+				    <div class="col-md-3"> <i class="fa fa-line-chart"></i>
+				    	<p class="text-center"><img src="Icons/PALAWAG.png" alt="Frederick pic"></p>
+				        <h4 class="mb0" >Palawag, Allysa Mae</h4>
+					    <div class="meta"><span>Web Designer, Writer</span></div>
+				    </div>
 			    </div>
-			    <div class="col-md-3"> <i class="fa fa-gears"></i>
-			    	<p class="text-center"><img src="Icons/GACILAN.png" alt="Frederick pic"></p>
-			        <h4 class="mb0" >Gacilan, John James</h4>
-				    <div class="meta"><span>Web Developer, Writer</span></div>
-			    </div>
-			    <div class="col-md-3"> <i class="fa fa-rocket"></i>
-			    	<p class="text-center"><img src="Icons/PALAGANAS.png" alt="Frederick pic"></p>
-			        <h4 class="mb0" >Palaganas, Jhonnie</h4>
-				    <div class="meta"><span>Web Designer, Web Developer, Programmer</span></div>
-			    </div>
-			    <div class="col-md-3"> <i class="fa fa-line-chart"></i>
-			    	<p class="text-center"><img src="Icons/PALAWAG.png" alt="Frederick pic"></p>
-			        <h4 class="mb0" >Palawag, Allysa Mae</h4>
-				    <div class="meta"><span>Web Designer, Writer</span></div>
-			    </div>
-		    </div>
+			</div>
 		</div>
 		<div class="page-content">
-			<p>We students of the University of the Cordillera would like to enlighten everyone through our photographies
-			ADD MORE HERE !! :D</p>
-			<p>Knowledgeable in:.</p>
-			<ul class="square">
-				<li>Web Design</li>
-				<li>Wed Developing</li>
-				<li>etc</li>
-			</ul>	
-
-
+			<p>We students of the University of the Cordillera would like to enlighten everyone through our photographies.</p>
 		</div>
-		<center><h1 class="mb0" id="mission">MISSION</h1></center>
-		<div class="page-content">
-			<center>Creating durable images in order to tell a new story.Preservation of memories through photography in any kind of class.</center>			
+		<div id = "section2">
+			<center><h1 class="mb0" id="mission">MISSION</h1></center>
+			<div class="page-content">
+				<center>Creating durable images in order to tell a new story.Preservation of memories through photography in any kind of class.</center>			
+			</div>
+			<center><h1 class="mb0" id="vision">VISION</h1></center>
+			<div class="page-content">
+				<center>The art of making memories, creating and telling your stories through the practice of photography going on for a long time into the future.</center>
+			</div>
 		</div>
-		
+		<div id = "section3">
+			<center><h1 class="mb0" id="Achievements">Achievements</h1></center>
+			<div class="page-content">
+				<p>A thing done successfully, typically by effort, courage, or skill.</p>	
+				<ul class="square">
+					<li>Group Won in 2019 Technolympics</li>
+					<li>Certified CCNA</li>
+					<li>Web Developer Competition, 2019</li>
+				</ul>
+			</div>
 		</div>
-		<center><h1 class="mb0" id="vision">VISION</h1></center>
-		<div class="page-content">
-			<center>The art of making memories, creating and telling your stories through the practice of photography going on for a long time into the future.</center>
-		</div>
-		</div>
-		
 		<!-- END .container-fluid -->
 
 		<footer id="footer" role="contentinfo">
